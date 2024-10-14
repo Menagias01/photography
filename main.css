@@ -1,0 +1,386 @@
+@import url('https://fonts.cdnfonts.com/css/noto-serif-tangut-2');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header style */
+
+.header{
+    font-size: 22px;
+}
+
+@media (max-width: 1024px){
+    .header{
+        font-size: 25px;
+    }
+    .hide{
+        font-size: 15px;
+    }
+}
+@media (max-width: 800px){
+    .header{
+        font-size: large;
+    }
+    .hide{
+        font-size: 18px;
+    }
+}
+@media (max-width: 400px){
+    .header{
+        font-size: large;
+    }
+    .hide{
+        font-size: 18px;
+    }
+}
+/* end of header style*/
+
+a {
+    text-decoration: none;
+}
+body{
+    max-height: 100%;
+}
+
+/* navigation menu */
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.0);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* το .name φτιαχνει το κενο πανω απο την οθονη πανω δεξια*/
+.name{
+    margin: 0 10px; 
+    font-family: 'Noto Serif', serif;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    font-family: 'Noto Serif Tangut', sans-serif;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.753);
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.hide{
+    padding: 0 30px;
+}
+.menu-button{
+    display: none;
+    padding: 0 30px;
+}
+.hideOnMobile{
+    font-size: 20px;
+    padding: 0 30px;
+}
+@media (max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+        padding: 0 30px;
+    }
+}
+@media (max-width:400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+/* end of nav menu */
+
+
+/* style gallery.html */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 4px;
+    width: 60%; /* Ορίζει το μέγιστο πλάτος των φωτογραφιών */
+    height: auto; /* Το ύψος προσαρμόζεται αυτόματα για να διατηρηθεί η αναλογία */
+    margin: 0 auto; /* Κεντράρει τις φωτογραφίες οριζόντια */
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    box-sizing: border-box;
+    flex: auto;
+    padding: 0 4px;
+    height: auto; /* Το ύψος προσαρμόζεται αυτόματα για να διατηρηθεί η αναλογία */
+    width: 45%; /* Ορίζει το μέγιστο πλάτος των φωτογραφιών */
+    
+}
+
+.column img {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 4px;   
+}
+ 
+/* media query για κινητές συσκευές */
+@media (max-width: 800px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 4px;
+        width: auto;
+        height: auto;
+        margin: auto auto; 
+    }
+    
+    .column {
+        box-sizing: border-box;
+        flex: auto;
+        padding: 0 4px;
+        height: auto;
+        width: 50%; 
+        
+    }
+    
+    .column img {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 4px;   
+    }
+}
+
+@media (max-width: 400px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 4px;
+        width: auto; 
+        height: auto; 
+        margin: auto auto; 
+    }
+    
+    .column {
+        box-sizing: border-box;
+        flex: auto;
+        padding: 0 4px;
+        height: auto; 
+        width: 50%; 
+        
+    }
+    
+    .column img {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 4px;   
+    }
+}
+
+
+/* end of style gallery.html */
+
+
+/* style blog.html*/
+
+/* Κεντράρει το περιεχόμενο οριζόντια και κάνει το κείμενο κεντρικό */
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%; /* Καθιστά το στοιχείο κεντρικό και καλύπτει όλο το ύψος της οθόνης */
+    margin-top: 5%;
+}
+
+/* Προσθέστε τα αναγκαία στυλ για το κείμενο */
+.entry-content {
+    background-color: #ffffff; /* Προσθέστε το χρώμα φόντου που επιθυμείτε */
+    margin: 0 20%;
+    max-width: 100%; /* Καθορίστε το μέγιστο πλάτος του περιεχομένου */
+    width: auto;
+    line-height: 2; /* Καθορίζει την απόσταση μεταξύ των γραμμών */
+    font-family: 'Noto Serif Tangut', sans-serif;
+    font-size: 18px;
+    text-align: center;   
+}
+.entry-content p {
+    margin-bottom: 20px; /* Προσαρμόστε το ύψος του κενού όπως επιθυμείτε */
+}
+
+.about-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 5% 20%;
+}
+
+.about-avatar img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+/* media query για κινητές συσκευές */
+
+@media (max-width: 400px) {
+    .center-text {
+        margin-top: 5%;
+    }
+
+    .entry-content p {
+        margin-bottom: 20px; /* Προσαρμόστε το ύψος του κενού όπως επιθυμείτε */
+    }
+    
+    /* Προσθέστε τα αναγκαία στυλ για το κείμενο */
+    .entry-content {
+        text-align: left;
+        line-height: 1.5; /* απόσταση μεταξύ των γραμμών */
+        font-size: 14px;
+    }
+    .about-avatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 40px 20%;
+    }
+    
+    .about-avatar img{
+        width: 90%;
+        border-radius: 50%;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .center-text {
+        margin-top: 5%;
+    }
+
+    .entry-content p {
+        margin-bottom: 20px; /* Προσαρμόστε το ύψος του κενού όπως επιθυμείτε */
+    }
+    
+    /* Προσθέστε τα αναγκαία στυλ για το κείμενο */
+    .entry-content {
+        text-align: left;
+        line-height: 1.5; /* απόσταση μεταξύ των γραμμών */
+        font-size: 14px;
+    }
+    .about-avatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 40px 20%;
+    }
+    
+    .about-avatar img{
+        width: 80%;
+        border-radius: 50%;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .center-text {
+        margin-top: 10%;
+    }
+
+    .entry-content p {
+        margin-bottom: 20px; /* Προσαρμόστε το ύψος του κενού όπως επιθυμείτε */
+    }
+    
+    /* Προσθέστε τα αναγκαία στυλ για το κείμενο */
+    .entry-content {
+        text-align: left;
+        line-height: 1.5; /* απόσταση μεταξύ των γραμμών */
+        font-size: 14px;
+    }
+    .about-avatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 10% 20%;
+    }
+    
+    .about-avatar img{
+        width: 50%;
+        border-radius: 50%;
+    }
+    
+}
+
+/* end of style blog.html */
+
+
+/* contact.html */
+.container div{
+    margin: 100px 0;
+}
+.contact-middle div{
+    text-align: center;
+    padding: 20% 30px;
+    background: #ffffff;
+    color: #000;
+}
+.contact-icon{
+    font-size: 45px;
+}
+a {
+    color: #000;
+} 
+
+@media screen and (min-width: 678px){
+    /* section five */
+    .contact-middle{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+}
+/* end of contact.html */
+
+/* footer style*/
+.footer p {
+    text-align: center;
+    margin : 12%;
+    font-size: 14px; /* Μεγέθυνση του κειμένου των πνευματικών δικαιωμάτων */
+}
+
+/* end of footer style */

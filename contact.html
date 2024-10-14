@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Phtoography site </title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>        
+        <!-- header -->
+        <header class="header">
+            <nav>
+                <ul class="sidebar">
+                    <li onclick = hideSidebar()><a href ="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li class="hide"><a href ="index.html"> Work</a></li>
+                    <li class="hide"><a href ="about.html"> About</a></li>
+                    <li class="hide"><a href ="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="name"><a href ="index.html"> Lorem Ipsum </a></li>
+                    <li class="hideOnMobile"><a href ="index.html"> Work</a></li>
+                    <li class="hideOnMobile"><a href ="about.html"> About</a></li>
+                    <li class="hideOnMobile"><a href ="contact.html">Contact</a></li>
+                    <li class="menu-button" onclick = showSidebar()><a href ="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header> 
+        <!-- end of header -->
+        <!-- main -->
+            <div class = "container">
+                <div class = "contact-middle">
+                    <div>
+                        <span class = "contact-icon">
+                            <p><a href="mailto:menagias01@gmail.com">
+                                <ion-icon name="mail-open-outline"></ion-icon>
+                            </a></p>    
+                        </span>
+                    </div>
+                    <div>
+                        <span class = "contact-icon">
+                            <p><a href="https://instagram.com/makis_menagias_/">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        <!-- end of main -->
+
+
+        <!-- footer -->
+        <footer class = "footer">
+        </footer>
+        <!-- end of footer -->
+        
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
